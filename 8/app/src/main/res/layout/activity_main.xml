@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- TOOLBAR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button android:id="@+id/btnBack"
+            android:text="◀"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <Button android:id="@+id/btnForward"
+            android:text="▶"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <Button android:id="@+id/btnRefresh"
+            android:text="🔄"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <Button android:id="@+id/btnHome"
+            android:text="🏠"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <!-- ADDRESS BAR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/urlBar"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="Enter URL"/>
+
+        <Button
+            android:id="@+id/btnGo"
+            android:text="Go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!-- PROGRESS -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:visibility="gone"/>
+
+    <!-- SHORTCUTS -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnGoogle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Google" />
+
+            <Button
+                android:id="@+id/btnYouTube"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YouTube" />
+
+            <Button
+                android:id="@+id/btnWiki"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wikipedia" />
+
+            <Button
+                android:id="@+id/btnKhan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Khan" />
+
+            <Button
+                android:id="@+id/btnUni"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="University" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- WEBVIEW -->
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>
