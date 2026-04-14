@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- STUDENT INFO -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Student Name: Fahim Hasan"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Student ID: 22-XXXXX"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Semester: Spring 2026"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Department: CSE"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- TABLE -->
+        <TableLayout
+            android:id="@+id/gradeTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+
+            <!-- HEADER -->
+            <TableRow android:background="#CCCCCC">
+                <TextView android:text="Subject"
+                    android:textStyle="bold"
+                    android:padding="8dp"/>
+                <TextView android:text="Obtained"
+                    android:textStyle="bold"
+                    android:padding="8dp"/>
+                <TextView android:text="Total"
+                    android:textStyle="bold"
+                    android:padding="8dp"/>
+                <TextView android:text="Grade"
+                    android:textStyle="bold"
+                    android:padding="8dp"/>
+            </TableRow>
+
+        </TableLayout>
+
+        <!-- SUMMARY ROW -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:layout_marginTop="12dp">
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/summaryText"
+                    android:layout_span="4"
+                    android:text="Total Subjects: 0 | Passed: 0 | Failed: 0"
+                    android:textStyle="bold"
+                    android:padding="8dp"/>
+            </TableRow>
+        </TableLayout>
+
+        <!-- GPA -->
+        <TextView
+            android:id="@+id/gpaText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GPA: 0.00"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="16dp"/>
+
+        <!-- ADD SUBJECT -->
+        <EditText
+            android:id="@+id/subjectInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Subject Name"/>
+
+        <EditText
+            android:id="@+id/obtainedInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Marks Obtained"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/totalInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Total Marks"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/addBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Subject"/>
+
+        <Button
+            android:id="@+id/printBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Print / Share"
+            android:layout_marginTop="12dp"/>
+
+    </LinearLayout>
+</ScrollView>
