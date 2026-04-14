@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:padding="12dp">
+
+    <!-- Avatar Initial -->
+    <TextView
+        android:id="@+id/tvAvatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="A"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:background="@android:color/darker_gray" />
+
+    <!-- Name -->
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tvAvatar"
+        android:layout_marginStart="12dp"
+        android:text="John Doe"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+
+    <!-- Phone -->
+    <TextView
+        android:id="@+id/tvPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvName"
+        android:layout_toEndOf="@id/tvAvatar"
+        android:layout_marginStart="12dp"
+        android:text="017XXXXXXXX" />
+
+    <!-- Call Icon -->
+    <ImageView
+        android:id="@+id/imgCall"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:src="@android:drawable/ic_menu_call" />
+
+</RelativeLayout>
