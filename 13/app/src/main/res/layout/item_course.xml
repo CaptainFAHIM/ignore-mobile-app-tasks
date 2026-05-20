@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/courseCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="2dp"
+    app:strokeColor="#E3E8F0"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textCourseName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Course Name"
+            android:textColor="#122033"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textCourseCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="CSE301"
+            android:textColor="#4F6B95"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textInstructor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Instructor"
+            android:textColor="#2E3B4E" />
+
+        <TextView
+            android:id="@+id/textCreditHours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="3 credit hour(s)"
+            android:textColor="#2E3B4E" />
+
+        <TextView
+            android:id="@+id/textSchedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Schedule"
+            android:textColor="#2E3B4E" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/buttonEditCourse"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Edit course"
+                android:padding="8dp"
+                android:src="@android:drawable/ic_menu_edit"
+                android:tint="#3B82F6" />
+
+            <ImageButton
+                android:id="@+id/buttonDeleteCourse"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Delete course"
+                android:padding="8dp"
+                android:src="@android:drawable/ic_menu_delete"
+                android:tint="#EF4444" />
+        </LinearLayout>
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

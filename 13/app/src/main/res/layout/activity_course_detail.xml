@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CourseDetailActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="100dp">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/detailToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:title="Course Detail" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="22dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/textDetailName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#122033"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    tools:text="Mobile App Development" />
+
+                <TextView
+                    android:id="@+id/textDetailCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:textColor="#4F6B95"
+                    android:textStyle="bold"
+                    tools:text="CSE301" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#E5EAF2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Instructor"
+                    android:textColor="#6B7280"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textDetailInstructor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textColor="#1E2A3B"
+                    tools:text="Dr. Sarah Rahman" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:text="Credit Hours"
+                    android:textColor="#6B7280"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textDetailCreditHours"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textColor="#1E2A3B"
+                    tools:text="3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:text="Schedule"
+                    android:textColor="#6B7280"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textDetailSchedule"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textColor="#1E2A3B"
+                    tools:text="Sun-Tue 10:00 AM" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:text="Room"
+                    android:textColor="#6B7280"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textDetailRoom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textColor="#1E2A3B"
+                    tools:text="Room 301, Building B" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:text="Semester"
+                    android:textColor="#6B7280"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textDetailSemester"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textColor="#1E2A3B"
+                    tools:text="Spring 2025" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabEditCourse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="20dp"
+        android:contentDescription="Edit course"
+        android:src="@android:drawable/ic_menu_edit"
+        app:tint="@android:color/white" />
+
+</FrameLayout>
