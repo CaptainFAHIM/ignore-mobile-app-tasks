@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">StudentAuthApp</string>
+    <string name="university_name">StudentAuthApp</string>
+    <string name="splash_subtitle">Campus access made simple</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="already_have_account">Already have an account? Login</string>
+    <string name="dont_have_account">Don\'t have an account? Register</string>
+    <string name="welcome_home">Welcome Home</string>
+    <string name="home_message">You are signed in locally on this device.</string>
+    <string name="email_password_required">Email and password are required.</string>
+    <string name="invalid_email">Enter a valid email address.</string>
+    <string name="password_too_short">Password must be at least 8 characters.</string>
+    <string name="password_mismatch">Passwords do not match.</string>
+    <string name="registration_success">Account created successfully.</string>
+    <string name="login_success">Login successful.</string>
+    <string name="invalid_credentials">Invalid email or password.</string>
+    <string name="no_account_found">No saved account found. Please register first.</string>
+    <string name="missing_registration_fields">Please fill in all registration fields.</string>
+</resources>
