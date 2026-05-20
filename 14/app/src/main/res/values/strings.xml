@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">UniversityNewsApp</string>
+    <string name="bottom_posts">Posts</string>
+    <string name="bottom_users">Users</string>
+    <string name="retry">Retry</string>
+    <string name="loading">Loading</string>
+    <string name="search_posts">Search posts by title</string>
+    <string name="posts_by_user">Posts by this user</string>
+    <string name="comments">Comments</string>
+</resources>
